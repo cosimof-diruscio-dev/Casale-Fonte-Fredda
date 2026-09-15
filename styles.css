@@ -1,0 +1,286 @@
+html,
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: rgb(2 108 115 / 75%);
+}
+h1,h2{
+  font-family: Playfair Display, serif;
+}
+h1 {
+  
+  color: rgb(2 108 115 / 75%);
+  font-size: 2rem;
+  float: left;
+}
+h2 {
+  color:  rgb(2 108 115 / 75%);
+  font-size: 35px;
+}
+
+.menu {
+  height: 100px;
+}
+
+.copertina {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  margin-bottom: 20px;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+nav {
+  position: relative;
+  float: right;
+
+  .menu {
+    z-index: 2;
+  }
+}
+
+button:hover {
+  color: rgb(2 108 115 / 75%);
+  scale: 1.1;
+  transition-delay: 0, 5s;
+  transition-property: all;
+  transition-duration: 0, 8s;
+}
+
+ul,
+button {
+  background-color: transparent;
+  padding: 0%;
+  margin: 0%;
+  border: 0px;
+  display: inline;
+}
+button > li {
+  font-size: 18px;
+  display: inline;
+  padding: 20px;
+  list-style-type: none;
+  float: right;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color:  rgb(2 108 115 / 75%);
+  text-decoration: none;
+  border: 10px;
+}
+p{
+  color: rgb(37, 37, 37);
+}
+.container {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  .card1 {
+    height: 1045px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card2 {
+    height: 600px;
+  }
+
+  .card1testo {
+    height: 828px;
+    width: 662px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.277);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+  }
+
+  .card2testo {
+    height: 500px;
+    width: 45vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.277);
+    margin: 10px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+
+    > div {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+
+  .card1immagine {
+    > img {
+      float: right;
+      width: 40%;
+      border-radius: 10px;
+    }
+  }
+  .card2immagine {
+    > img {
+      left: 10rem;
+      float: inline-start;
+      height: max-content;
+      width: 35%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+
+  .card3 {
+    height: 450px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+
+  .card3testo {
+    height: 390px;
+    width: 995px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.277);
+    margin: 10px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+
+    > div {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}
+
+.verificaposto {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > div {
+    font-size: 22px;
+  }
+
+  .controllo {
+    border-radius: 20px;
+    border: solid;
+    margin: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    > button {
+      font-size: 25px;
+      cursor: pointer;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+form > button {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card4 {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.277);
+  margin: 10px;
+  padding: 5px;
+  float: right;
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.mappa {
+  height: 530px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contatti {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  color: rgb(2 108 115 / 75%);
+}
+
+.contatti_titolo {
+  font-size: 30px;
+  width: 100%;
+}
+
+.contatti_info {
+  font-size: 25px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  > nav,
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+ul,
+li {
+  display: inline-block;
+  
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: auto; 
+  gap: 20px; 
+  width: 100%;
+  max-width: 100%; 
+  margin: auto;
+}

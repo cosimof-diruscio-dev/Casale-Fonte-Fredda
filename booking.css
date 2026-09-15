@@ -1,0 +1,146 @@
+html,
+body {
+  background-color: #ffffff;
+  
+}
+h1 {
+  font-size: xx-large;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-size: 28px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & button,
+  li {
+    display: inline-block;
+    border: none;
+    padding: 0px;
+    margin-right: 20px;
+    font-size: 20px;
+    background-color: transparent;
+  }
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-style: inherit;
+}
+form {
+  font-weight: bold;
+  color: white;
+  width: 50%;
+  margin: auto;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(2 108 115 / 75%);
+  padding: 30px;
+  border-radius: 20px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .form-control {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 22px;
+  }
+
+  & label {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  & input,
+  textarea {
+    resize: none;
+  }
+
+  & button > svg {
+    height: 20px;
+    right: 10px;
+    margin-right: 10px;
+  }
+
+  & button {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+  }
+}
+.checkbox {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.hidden-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 24px;
+  right: 0px;
+  height: 15px;
+  width: 15px;
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+.hidden-checkbox:checked ~ .checkmark::before {
+  content: "\2713";
+  display: block;
+  text-align: center;
+  line-height: 16px;
+  color: forestgreen;
+  font-weight: bold;
+  font-size: 26px;
+}
+.bottoni_di_prenotazione {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatti_info {
+  font-size: 20px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  > div {
+    height: 150px;
+  }
+}

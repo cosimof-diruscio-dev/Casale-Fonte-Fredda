@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prenotazione | Casale fonte Fredda</title>
+    <link rel="stylesheet" href="booking.css" />
+
+  </head>
+  <body>
+    <header>
+      <section>
+        <h1>Casale Fonte Fredda</h1>
+        <nav>
+          <ul>
+            <button>
+              <li><a href="index.html">Home</a></li>
+            </button>
+            <button>
+              <li><a href="booking.html">Prenota Ora </a></li>
+            </button>
+            <!-- <button>
+              <li><a href="/login.html">Accedi</a></li>
+            </button> -->
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="prenotazione_soggiorno">
+        <form
+          action="http://localhost:8000/submit"
+          method="post"
+          enctype="application/x-www-form-urlencoded"
+          id="form_di_prenotazione"
+        >
+          <h2>Registrazione della Prenotazione</h2>
+          <div>
+            <label id="label-nome" for="nome" aria-label="nome">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              aria-labelledby="label-nome"
+              value=""
+              placeholder="Federico "
+              aria-placeholder="Inserire il proprio Nome"
+              class="form-control"
+              required
+            />
+          </div>
+          <div>
+            <label id="label-cognome" for="cognome" aria-label="cognome"
+              >Cognome</label
+            >
+            <input
+              type="text"
+              id="cognome"
+              name="cognome"
+              aria-labelledby="label-cognome"
+              value=""
+              placeholder="Rossi "
+              aria-placeholder="Inserire il proprio cognome"
+              class="form-control"
+              required
+            />
+          </div>
+          <div>
+            <label id="label-email" for="email" aria-label="email"
+              >e-mail</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-labelledby="label-email"
+              value=""
+              placeholder="nome@email.com "
+              class="form-control"
+              required
+            />
+          </div>
+          <div>
+            <label id="label-telefono" for="telefono" aria-label="telefono"
+              >Telefono</label
+            >
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              aria-labelledby="label-telefono"
+              value=""
+              placeholder="+39-3456789199 "
+              aria-placeholder="Numero di telefono"
+              class="form-control"
+              required
+            />
+          </div>
+          <div>
+            <label for="data-check-in">Data Check-in</label>
+            <input type="date" id="data-check-in" name="data-check-in" class="form-control" required>
+        </div>
+        <div>
+            <label for="data-check-out">Data Check-out</label>
+            <input type="date" id="data-check-out" name="data-check-out" class="form-control" required>
+        </div>
+        <div>
+            <input type="hidden" id="checkin" name="checkin" value="">
+            <input type="hidden" id="checkout" name="checkout" value="">
+        </div>
+          <div>
+            <p>
+              C'è qualcosa che vuoi farci sapere legato alla tua prenotazione?
+              <br />
+              scrivilo pure qui:
+            </p>
+            <label
+              id="label-textarea"
+              for="textarea"
+              aria-label="textarea"
+              aria-placeholder="Inserire informazioni aggiuntive riguardo la prenotazione"
+            ></label>
+            <textarea
+              rows="5"
+              cols="40"
+              wrap="soft"
+              name="textarea"
+              id="textarea"
+              placeholder="es: abbiamo un cane, con noi è presente una persona disabile ecc.."
+              aria-valuetext="textarea"
+              class="form-control"
+            ></textarea>
+            <div class="checkbox">
+              <label class="custom-checkbox" for="prova">
+                <input
+                  id="prova"
+                  type="checkbox"
+                  class="hidden-checkbox"
+                  required
+                />
+                <span class="checkmark"></span>
+                Accetti i Termini e Condizioni*
+              </label>
+            </div>
+          </div>
+          <div class="bottoni_di_prenotazione">
+            <button type="reset">Ripulisci i campi</button>
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                />
+              </svg>
+              Invia
+            </button>
+          </div>
+        </form>
+      </section>
+      <section class="contatti_info">
+        <h2 id="contattaci">I nostri Contatti</h2>
+        <div>
+          <p>Dove siamo:</p>
+          <p>Contrada Tenuno, 11, Rovellato, PH</p>
+          <p>45678, Italia</p>
+        </div>
+        <div>
+          <p>E-mail:</p>
+          <a
+            href="mailto:casalefontefredda@gmail.com?subject=Richiesta%20Informazioni&body="
+            >casalefontefredda@gmail.com</a
+          >
+        </div>
+        <div>
+          <p>Telefono/Whatsapp</p>
+
+          <p>Nazzario: +39 392 4065406196</p>
+          <p>Carlita: +39 334 2556701484 <br>(English)</br></p>
+        </div>
+      </section>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

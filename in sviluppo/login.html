@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="canonical" href="http://example.com/" />
+    <meta name="robots" content="index" />
+    <meta name="robots" content="follow" />
+    <link rel="icon" type="image/jpg" href="#" />
+
+    <!-- article -->
+    <title>Login|Casale Fonte Fredda</title>
+    <meta name="author" content="Di Ruscio Cosimo Francesco" />
+    <meta property="description" content="description here" />
+    <meta property="keywords" content="keywords, here" />
+
+    <!-- facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TITLE OF YOUR POST OR PAGE" />
+    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
+    <meta property="og:image" content="LINK TO IMAGE FILE" />
+    <meta property="og:url" content="PERMALINK" />
+    <meta property="og:site_name" content="SITE NAME" />
+    <!-- Twitter -->
+    <meta property="og:title" content="TITLE OF YOUR POST OR PAGE" />
+    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
+    <meta property="og:image" content="LINK TO IMAGE FILE" />
+    <meta property="og:site" content="@USERNAME" />
+    <meta property="og:creator" content="@USERNAME" />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        background-color: rgb(60, 209, 60);
+      }
+      input {
+        background-color: rgb(82, 238, 82);
+        border-radius: 10px;
+      }
+      .titolo,
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-end;
+        flex-direction: column;
+      }
+
+      button {
+        background-color: rgb(17, 125, 17);
+        border-radius: 10px;
+      }
+      .dati {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="login">
+        <div class="titolo">
+          <h1>Accedi al tuo account</h1>
+          <p>Vivi un'esperienza magica al Casale Fonte fredda</p>
+        </div>
+        <div class="dati">
+          <form
+            action="http://localhost:8000/login"
+            method="post"
+            enctype="multipart/form-data"
+            id="login"
+          >
+            <label id="label-email" for="email" aria-label="email"
+              >E-mail</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-labelledby="label-email"
+              value=""
+              placeholder="nome@email.com "
+              aria-placeholder="Inserire la propria e-mail"
+            />
+            <label id="label-password" for="password" aria-label="password"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              aria-labelledby="label-password"
+              value=""
+              placeholder="Aer5!oiu9&"
+              aria-placeholder="Aer5!oiu9&"
+            />
+            <button type="submit">Invia</button>
+            <button type="reset">Ripulisci i campi</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+</html>
